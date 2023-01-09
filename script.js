@@ -35,16 +35,15 @@ window.onload = function () {
     count++;
     countElement.innerHTML = `Було ${count} спроб`;
     answ.innerHTML = answer.join(" ");
+    if (count == 10 && remain == 0) {
+      alert("Ви перемогли!");
+    } else {
+      alert("Ви програли!");
+    }
   }
 
   const guessButton = document.getElementById("guess");
   guessButton.addEventListener("click", check);
-
-  if (count == 10 && remain == 0) {
-    alert("Ви перемогли!");
-  } else {
-    alert("Ви програли!");
-  }
 
   init();
 };
