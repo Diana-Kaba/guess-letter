@@ -35,9 +35,9 @@ window.onload = function () {
     count++;
     countElement.innerHTML = `Було ${count} спроб`;
     answ.innerHTML = answer.join(" ");
-    if (count == 10 && remain == 0) {
+    if (remain == 0) {
       alert("Ви перемогли!");
-    } else {
+    } else if (count == 10 && remain != 0) {
       alert("Ви програли!");
     }
   }
