@@ -37,7 +37,7 @@ window.onload = function () {
     answ.innerHTML = answer.join(" ");
     if (remain == 0) {
       alert("Ви перемогли!");
-    } else if (count == 10 && remain != 0) {
+    } else if (count == 10) {
       alert("Ви програли!");
     }
   }
